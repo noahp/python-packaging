@@ -1,4 +1,4 @@
-# python-packaging
+# 🐍 python-packaging
 Cheatsheet on python packaging.
 
 References:
