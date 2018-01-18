@@ -1,0 +1,9 @@
+#!/usr/bin/env python
+"""
+Example packaged script.
+"""
+import pure_python
+
+
+if __name__ == '__main__':
+    pure_python.print_hello()
