@@ -6,6 +6,13 @@ References:
 - setuptools docs https://setuptools.readthedocs.io/en/latest/setuptools.html
 - Setupscript information https://docs.python.org/2/distutils/setupscript.html
 
+For a REALLY quick setup for a new package, you can use [pyscaffold](https://github.com/blue-yonder/pyscaffold):
+```bash
+pip install pyscaffold  # for python 3
+pip install pyscaffold==2.5  # for python 2.x
+putup new-package  # initializes a git repo in a new folder `new-package` with a skeleton package
+```
+
 # Use
 Copy the example `setup.py` and modify for your use.
 
