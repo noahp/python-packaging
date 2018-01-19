@@ -1,0 +1,10 @@
+#!/usr/bin/env python
+"""
+Example packaged script.
+"""
+import platform_wheel_extension  # pylint: disable=E0401
+
+if __name__ == '__main__':
+    import sys
+
+    print platform_wheel_extension.sqrtf(float(sys.argv[1]))

@@ -1,4 +1,4 @@
-# examples/pure_python
+# examples/pure_python_bare_modules
 A really simple example with a bare python module. This is about as simple as it gets!
 
 This also shows how a script `pure_python_script` can be distributed with the package.
