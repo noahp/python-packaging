@@ -68,13 +68,6 @@ setup(
     # Dependencies listed here
     install_requires=['pyyaml==1.2.3'],
 
-    # Custom dependency links, if your dependency is hosted in a custom location. Note that if your
-    # package is a name conflict with a package hosted on PyPi, you'll need to change the version
-    # number to non-conflict.
-    # It's usually better to use a non-conflicting name if you need to use this facility (or upload
-    # your custom package to PyPi).
-    # TODO!
-
     # A simple example for native c python extensions- specify the sources and compile args here
     # Note that this native extension will produce a platform-specfic wheel, see
     #  https://packaging.python.org/tutorials/distributing-packages/#platform-wheels and
