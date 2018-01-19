@@ -33,6 +33,7 @@ I recommend testing in a clean virtualenv to make sure any scripts or dependenci
 Note that the naming scheme for the `.whl` file should not be modified, it's processed by setuptools when fetching and installing the package.
 
 # setup.py
+The informative parameter values (version, author, url, etc.) are available from `pip show` after installing the wheel.
 ```python
 """
 Example setup.py for building distutils wheels.
@@ -92,7 +93,7 @@ setup(
 # Single source of version
 This snippet can be added to a `setup.py` file. It grabs a `__version__` string from the specified file, and uses it when producing the package file.
 
-Clumsy but it works!
+Clumsy but it works! Using scm (git semver tags) instead would require the package to retrieve its version number from `pkg_resources` after installation.
 
 ```python
 import os
