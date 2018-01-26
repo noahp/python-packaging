@@ -5,6 +5,7 @@ References:
 - Wheel reference https://packaging.python.org/tutorials/distributing-packages
 - setuptools docs https://setuptools.readthedocs.io/en/latest/setuptools.html
 - Setupscript information https://docs.python.org/2/distutils/setupscript.html
+- Excellent guide on PyPi https://hynek.me/articles/sharing-your-labor-of-love-pypi-quick-and-dirty
 
 For a REALLY quick setup for a new package, you can use [pyscaffold](https://github.com/blue-yonder/pyscaffold):
 ```bash
@@ -52,6 +53,15 @@ setup(
     #  ├── __init__.py
     #  └── some_package.py
     packages=['some_package'],
+    # Many modern packages use this structure; the python3 version of pyscaffold follows this:
+    #  ├── setup.py
+    #  ├── src
+    #  │   └── some_package
+    #  │       ├── __init__.py
+    #  │       └── some_module.py
+    # Then using `find_packages` to include pacakges under src/
+    from setuptools import find_packages
+    packages=find_packages(where='src'),
 
     # Individual modules you want to be available for `import` after installing the package
     # In this example, some_package.py would be in the same directory as this `setup.py` script
