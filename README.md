@@ -72,6 +72,17 @@ setup(
     # appropriate shebang, such as `#!/usr/bin/env` python for python scripts
     scripts=['util.py'],
 
+    # A preferrable way to install console scripts, using the entry point directive, selecting a
+    # python function to be installed to a particular console_script (here "my-script").
+    # More information and examples see
+    #  https://python-packaging.readthedocs.io/en/latest/command-line-scripts.html#the-console-scripts-entry-point
+    #  https://amir.rachum.com/blog/2017/07/28/python-entry-points/
+    entry_points={
+        "console_scripts": [
+            "my-script=some_package:main",
+        ],
+    },
+
     # For scripts, this corrects shebang replacement, from:
     #  https://github.com/pybuilder/pybuilder/issues/168
     options={'build_scripts': {'executable': '/usr/bin/env python'}},
